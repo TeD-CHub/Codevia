@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Codevia | Professional Website Development</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+      <span>Codevia</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <!-- Dark Mode Switch -->
+          <label class="theme-switch" title="Toggle dark mode">
+            <input type="checkbox" id="darkToggle" />
+            <span class="slider"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Crafting Code, Building Brands</h1>
+      <p>Your ideas deserve more than a template. Let’s build a site that reflects your vision and drives results.</p>
+      <a href="#contact" class="cta-btn">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Website Design</h3>
+        <p>Modern UI/UX to match your brand and engage users.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Responsive and fast websites using HTML, CSS, JS, and more.</p>
+      </div>
+      <div class="card">
+        <h3>SEO Optimization</h3>
+        <p>Make your site visible on Google and attract more visitors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>At Codevia, we believe every business deserves a digital presence that’s as powerful as its vision. We’re a team of passionate web developers and designers committed to building websites that don’t just look good — they perform.
+
+With a focus on clean code, elegant design, and user-first experiences, we help startups, entrepreneurs, and growing businesses transform their ideas into fast, modern, and scalable websites. Whether you're launching a new brand or refreshing an existing one, we bring the strategy, creativity, and technical skills to make it work.
+
+Our mission is simple:
+To craft digital experiences that build trust, boost visibility, and grow brands.</p>
+  </section>
+
+  <section id="mission" class="section mission-section">
+  <h2>Our Mission</h2>
+  <p>At Codevia, our mission is to craft high-performing websites that empower businesses to grow, connect, and lead in the digital space.</p>
+</section>
+
+<section id="values" class="section values-section">
+  <h2>Our Core Values</h2>
+  <div class="values-grid">
+    <div class="value-card">
+      <i class="fas fa-shield-alt value-icon"></i>
+      <h3>Integrity</h3>
+      <p>We prioritize honesty, transparency, and trust in every client interaction and project.</p>
+    </div>
+    <div class="value-card">
+      <i class="fas fa-star value-icon"></i>
+      <h3>Excellence</h3>
+      <p>We commit to delivering quality code, beautiful designs, and reliable results every time.</p>
+    </div>
+    <div class="value-card">
+      <i class="fas fa-lightbulb value-icon"></i>
+      <h3>Innovation</h3>
+      <p>We embrace new technologies to create future-proof digital solutions.</p>
+    </div>
+    <div class="value-card">
+      <i class="fas fa-handshake value-icon"></i>
+      <h3>Collaboration</h3>
+      <p>We work closely with our clients, treating their goals as our own.</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+  
+<section id="contact" class="section contact-section">
+  <h2>Contact Us</h2>
+  <p class="section-intro">Let’s bring your idea to life. Reach out below or send us a direct message.</p>
+
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <section class="contact-info">
+  <div class="info-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <div class="info-text">
+      <h4>Location</h4>
+      <p>Nairobi, Kenya</p>
+    </div>
+  </div>
+  <div class="info-item">
+    <i class="fas fa-envelope"></i>
+    <div class="info-text">
+      <h4>Email</h4>
+      <p><a href="mailto:Churchill4032@gmail.com">Churchill4032@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="info-item">
+    <i class="fas fa-phone"></i>
+    <div class="info-text">
+      <h4>Phone</h4>
+      <p><a href="tel:+254706215407">+254 706 215 407</a></p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/xovlnpzd" method="POST" class="contact-form">
+      <label>
+        <span>Your Name</span>
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        <span>Your Email</span>
+        <input type="email" name="_replyto" required />
+      </label>
+      <label>
+        <span>Your Message</span>
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit" class="cta-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Codevia. Code That Connects. Design That Converts.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
