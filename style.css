@@ -121,6 +121,9 @@ body {
   font-size: 1.25rem;
   color: var(--primary-color);
 }
+body.dark-mode .card h3 {
+  color: #f5f5f5; /* Light color for dark background */
+}
 
 /* Footer */
 .footer {
@@ -285,18 +288,20 @@ input:checked + .slider::before {
 
 .contact-form .cta-btn {
   align-self: flex-start;
-  background-color: var(--accent-color);
-  color: #fff;
+  background-color: var(--accent-color); /* Warm Gold */
+  color: var(--primary-color);           /* Midnight Blue text */
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
   border: none;
-  padding: 0.75rem 1.5rem;
-  font-weight: bold;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 .contact-form .cta-btn:hover {
   background-color: #e6b300; /* darker warm gold hover */
+  color: #121212;
 }
 
 /* Responsive for small screens */
@@ -390,19 +395,21 @@ input:checked + .slider::before {
 
 .contact-form .cta-btn {
   align-self: flex-start;
-  background-color: #2EC4B6; /* Teal button */
-  color: #fff;
+  background-color: var(--accent);     /* Warm Gold */
+  color: var(--primary-color);         /* Midnight Blue */
   padding: 0.8rem 1.5rem;
   font-weight: 600;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-form .cta-btn:hover {
-  background-color: #28b0a5;
+  background-color: #e6b300; /* Slightly darker gold */
+  color: #0A0A0A;            /* Darker text */
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -557,4 +564,66 @@ body.dark .contact-form textarea {
 
 .info-text a:hover {
   color: var(--accent);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes it a circle */
+  box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}
+.logo span {
+  font-size: 1.8rem;       /* Bigger and more prominent */
+  font-weight: 700;        /* Bolder */
+  color: #F5C518;          /* Warm Gold - visible and premium */
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 1px;
+}
+/* Hide hamburger by default */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav li {
+    text-align: center;
+  }
 }
